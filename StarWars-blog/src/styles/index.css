@@ -1,0 +1,59 @@
+@font-face {
+    font-family: andromeda;
+    src: url(./AquireLight-YzE0o.otf);
+}
+body{
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/001/623/177/original/sci-fi-deep-space-background-loop-free-video.jpg");
+    background-position: center;
+    background-repeat: repeat; 
+    background-size:cover;
+    position: relative;
+    overflow:auto;
+    overflow-x: hidden;
+    
+} 
+html{
+    overflow: auto;
+    overflow-x: hidden;
+
+} 
+.navbar{
+    z-index: 1000;
+    background: transparent !important;
+    color: white !important;
+    font-family: andromeda;
+    font-size: 24px;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+.nav-link{
+    position: relative;
+}
+.number{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 15px;
+    color: yellow;
+}
+.number-inactive{
+    display: none;
+}
+
+.vital-icon{
+    font-size: 30px;
+}
+.vital-icon-active{
+    font-size: 30px;
+    color: yellow;
+
+}
+
+.footer{
+    font-family: andromeda;
+    color: white;
+    z-index: 30;
+    position: relative;
+    bottom: 0;
+}

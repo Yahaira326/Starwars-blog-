@@ -1,0 +1,157 @@
+@font-face {
+    font-family: andromeda;
+    src: url(./AquireLight-YzE0o.otf);
+}
+.home-container{
+    height: 100vh;
+}
+
+.planet {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    animation: planet-load 2s ease-in-out;
+}
+.planet img{
+    position: absolute;
+    width: 50%;
+    min-width: 400px;
+    transform: scaleX(-1);
+}
+.ship{
+    position: relative;
+    left: 40%;
+    top: 180px;
+    animation: ship-load 2s ease-in-out;
+    
+}
+.ship img{
+    position: relative;
+    width: 55%;
+    min-width: 400px;
+    transform: scaleX(-1);
+    
+}
+.title{
+    position: absolute;
+    display: block;
+    justify-content: end;
+    align-items: end;
+    width: 50%;
+    left: 50%;
+    top: 70px;
+    animation: title-load 4s ease-in;
+}
+.title h1{
+    position: relative;
+    color: white;
+    font-size: 6vw;
+    font-family: andromeda;
+}
+.title img{
+    width: 150px;  
+}
+
+@media (max-width: 600px) {
+    .title{
+        position: absolute;
+        display: block;
+        justify-content: end;
+        align-items: end;
+        width: 90%;
+        left: 10%;
+        top: 620px;
+    }
+    .title h1{
+        position: relative;
+        color: white;
+        font-size: 12vw;
+        font-family: andromeda;
+    }
+    .ship{
+        position: relative;
+        left: 20%;
+        top: 180px;
+        animation: ship-load-sm 2s ease-in-out;
+    }
+    .ship img{
+        position: relative;
+        width: 55%;
+        min-width: 400px;
+        /* transform: scaleX(-1); */
+    }
+  }
+@media (max-height: 480px) {
+    .ship{
+        position: relative;
+        left: 35%;
+        top: 80px;
+        animation: ship-load-sm-wide 2s ease-in-out;
+        
+    }
+    .ship img{
+        position: relative;
+        width: 55%;
+        min-width: 400px;
+        /* transform: scaleX(-1); */
+    }
+    .title{
+        position: absolute;
+        display: block;
+        justify-content: end;
+        align-items: end;
+        width: 90%;
+        left: 50%;
+        top: 50px;
+    }
+    
+  }
+  @keyframes ship-load {
+    from{
+        left: 100%;
+        top: 180px;
+    }
+    to{
+        left: 40%;
+        top: 180px;
+    }
+  }
+  @keyframes ship-load-sm{
+    from{
+        left: 85%;
+        top: 180px;
+    }
+    to{
+        left: 20%;
+        top: 180px;
+    }
+  }
+  @keyframes ship-load-sm-wide{
+    from{
+        left: 85%;
+        top: 80px;
+    }
+    to{
+        left: 35%;
+        top: 80px;
+    }
+  }
+  @keyframes planet-load{
+    from{
+        top: -400px;
+        left: -600px;
+    }
+    to{
+        top: -200px;
+        left: -100px;
+    }
+  }
+  @keyframes title-load{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+  
